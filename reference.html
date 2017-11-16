@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>bootstrap reference</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--Some custom CSS for reference only-->
+	<style type="text/css">
+		.cola, .colb, .colc{
+			border: 1px #000 solid;
+		}
+
+		.cola {
+			background: #aaa;
+		}
+
+		.colb {
+			background: #bbb;
+		}
+
+		.colc {
+			background: #ccc;
+		}
+
+		.carousel-inner>.item>img {
+			margin: 0px auto;
+		}
+
+		.cola p, .colb p, .colc p{
+			color:#333;
+		}
+
+		@media screen and (max-width: 900px) {
+			.cola p, .colb p, .colc p{
+				color: #fff;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+
+
+	<!--mobile friendly hamburger menu-->
+	<nav class="navbar navbar-default affix-top">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+				<span class="glyphicon glyphicon-menu-hamburger"></span>
+			</button>
+			<a class="navbar-brand" href="#">Brand</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Profile</a></li>
+				<li><a href="#">Messages</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+
+	<!--carousel-->
+	<div class="fluid-container">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			<!-- wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<!--slide 1-->
+				<div class="item active">
+					<img src="img/wall1.jpg">
+					<div class="carousel-caption">
+						<p>Luthur</p>
+					</div>
+				</div>
+				<!--slide 2-->
+				<div class="item">
+					<img src="img/wall2.jpg">
+					<div class="carousel-caption">
+						<p>Sherlock</p>
+					</div>
+				</div>
+				<!--slide 3-->
+				<div class="item">
+					<img src="img/wall3.jpg">
+					<div class="carousel-caption">
+						<p>Penny Dreadful</p>
+					</div>
+				</div>
+			</div>
+			<!-- controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+
+
+
+	<!--Grid-->
+	<!--start with container-->
+	<div class="container">
+		<h2 class="text-uppercase">Grid</h2>
+		<!--then a row-->
+		<div class="row">
+			<!--then columns-->
+			<div class="col-lg-2">
+				<p>column 1</p>
+			</div>
+			<div class="col-lg-8">
+				<p>column 2</p>
+			</div>
+			<div class="col-lg-2">
+				<p>column 3</p>
+			</div>
+		</div>
+	</div>
+	<!--Another Example Grid-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 cola">
+				<p>column 4</p>
+			</div>
+			<div class="col-md-3 colb">
+				<p>column 5</p>
+			</div>
+			<div class="col-md-3 colc">
+				<p>column 6</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-sm-push-10 cola">
+				<p>column 7</p>
+			</div>
+			<div class="col-sm-8 col-sm-pull-2 colb">
+				<p>column 8</p>
+			</div>
+			<div class="col-sm-2 col-sm-pull-2 colc">
+				<p>column 9</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6 cola">
+				<p>column 10</p>
+			</div>
+			<div class="col-xs-3 colb">
+				<p>column 11</p>
+			</div>
+			<div class="col-xs-3 colc">
+				<p>column 12</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<h2 class="text-uppercase">Icons</h2>
+		<!--icons-->
+		<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-volume-down" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-volume-off" aria-hidden="true"></span>
+	</div>
+
+
+
+	<!--prestyled tables-->
+	<div class="container">
+		<h2 class="text-uppercase">Striped table</h2>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John</td>
+					<td>Doe</td>
+					<td>john@example.com</td>
+				</tr>
+				<tr>
+					<td>Mary</td>
+					<td>Moe</td>
+					<td>mary@example.com</td>
+				</tr>
+				<tr>
+					<td>July</td>
+					<td>Dooley</td>
+					<td>july@example.com</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+
+	<!--prestyled buttons-->
+	<div class="container">
+		<h2 class="text-uppercase">Buttons</h2>
+		<a href="#" class="btn">Basic</a>
+		<a href="#" class="btn btn-default">Default</a>
+		<a href="#" class="btn btn-primary">Primary</a>
+		<a href="#" class="btn btn-success btn-xs">Success</a>
+		<a href="#" class="btn btn-info btn-sm">Info</a>
+		<a href="#" class="btn btn-warning btn-md">Warning</a>
+		<a href="#" class="btn btn-danger btn-lg">Danger</a>
+		<a href="#" class="btn btn-link">Link</a>
+	</div>
+	<div class="container">
+		<h2 class="text-uppercase">Button Group</h2>
+		<div class="btn-group btn-group-justified">
+			<a href="#" class="btn btn-primary">Apple</a>
+			<a href="#" class="btn btn-primary">Samsung</a>
+			<a href="#" class="btn btn-primary">Sony</a>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+		<h2 class="text-uppercase">Progress Bars</h2>
+		<!--progress bars-->
+		<div class="row">
+			<p>The contextual classes colors the progress bars:</p>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+					40% Complete (success)
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+					50% Complete (info)
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+					60% Complete (warning)
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+					70% Complete (danger)
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+					60%
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2 class="text-uppercase">Drop and Accordian</h2>
+
+
+
+				<!--dropdown-->
+				<div class="dropdown">
+					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+						Dropdown Example <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="#">HTML</a></li>
+						<li><a href="#">CSS</a></li>
+						<li><a href="#">JavaScript</a></li>
+					</ul>
+				</div>
+
+
+
+				<!--accordian-->
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+									Collapsible Group 1
+								</a>
+							</h4>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse in">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+									Collapsible Group 2
+								</a>
+							</h4>
+						</div>
+						<div id="collapse2" class="panel-collapse collapse">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+									Collapsible Group 3
+								</a>
+							</h4>
+						</div>
+						<div id="collapse3" class="panel-collapse collapse">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+						</div>
+					</div>
+				</div>
+
+	</div>
+	<div class="container">
+		<div class="row text-center">
+			<h2 class="text-uppercase">Modals</h2>
+
+
+
+			<!--modal popup-->
+			<!--button to trigger modal-->
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+				Open Modal
+			</button>
+
+			<!--modal container -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+					<!-- modal content-->
+					<div class="modal-content">
+						<!-- modal header-->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Modal Header</h4>
+						</div>
+						<!-- modal body-->
+						<div class="modal-body">
+							<p>Some text in the modal.</p>
+						</div>
+						<!-- modal footer-->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<h2 class="text-uppercase">Dynamic Tabs</h2>
+
+
+
+		<!--tabs-->
+		<!--tabs navigation-->
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+			<li><a data-toggle="tab" href="#menu2">Menu 1</a></li>
+		</ul>
+
+		<!--tabs content-->
+		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+				<h3>HOME</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div id="menu2" class="tab-pane fade">
+				<h3>Menu 2</h3>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
