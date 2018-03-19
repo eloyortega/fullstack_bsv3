@@ -31,6 +31,10 @@
 		.cola p, .colb p, .colc p{
 			color:#333;
 		}
+		
+		.btn-primary{
+			background-color: #f00;
+		}
 
 		@media screen and (max-width: 900px) {
 			.cola p, .colb p, .colc p{
@@ -117,13 +121,13 @@
 		<!--then a row-->
 		<div class="row">
 			<!--then columns-->
-			<div class="col-lg-2">
+			<div class="col-xs-4">
 				<p>column 1</p>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-xs-4">
 				<p>column 2</p>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-xs-4">
 				<p>column 3</p>
 			</div>
 		</div>
@@ -276,8 +280,6 @@
 	<div class="container">
 		<h2 class="text-uppercase">Drop and Accordian</h2>
 
-
-
 				<!--dropdown-->
 				<div class="dropdown">
 					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
@@ -289,8 +291,6 @@
 						<li><a href="#">JavaScript</a></li>
 					</ul>
 				</div>
-
-
 
 				<!--accordian-->
 				<div class="panel-group" id="accordion">
@@ -343,8 +343,6 @@
 		<div class="row text-center">
 			<h2 class="text-uppercase">Modals</h2>
 
-
-
 			<!--modal popup-->
 			<!--button to trigger modal-->
 			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
@@ -379,13 +377,12 @@
 	<div class="container">
 		<h2 class="text-uppercase">Dynamic Tabs</h2>
 
-
-
 		<!--tabs-->
 		<!--tabs navigation-->
 		<ul class="nav nav-tabs">
 			<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
 			<li><a data-toggle="tab" href="#menu2">Menu 1</a></li>
+			<li><a data-toggle="tab" href="#menu3">Menu 2</a></li>
 		</ul>
 
 		<!--tabs content-->
@@ -397,6 +394,10 @@
 			<div id="menu2" class="tab-pane fade">
 				<h3>Menu 2</h3>
 				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+			</div>
+			<div id="menu3" class="tab-pane fade">
+				<h3>Menu 3</h3>
+				<p>this is new</p>
 			</div>
 		</div>
 	</div>
